@@ -12,6 +12,7 @@ export default function App() {
           <a
             href="https://app.netlify.com/sites/fabulous-marzipan-645376/overview"
             target="_blank"
+            rel="noreferrer"
           >
             {" "}
             Natalia Sukova{" "}
@@ -20,6 +21,7 @@ export default function App() {
           <a
             href="https://github.com/NataliSfromUA/react-weather-app"
             target="_blank"
+            rel="noreferrer"
           >
             {" "}
             Github

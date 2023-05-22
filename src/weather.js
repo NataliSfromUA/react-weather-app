@@ -5,30 +5,30 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function Weathr() {
   return (
     <div className="Weather">
-      <div class="weather-app-wrapper">
-        <div class="weather-app">
+      <div className="weather-app-wrapper">
+        <div className="weather-app">
           <form id="searchform">
-            <div class="row">
-              <div class="col-6">
+            <div className="row">
+              <div className="col-6">
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Choose your city"
                   aria-label="Choose your city"
                   autofocus="on"
                   id="searchcity"
                 />
               </div>
-              <div class="col">
-                <button type="submit" class="btn btn-warning">
+              <div className="col">
+                <button type="submit" className="btn btn-warning">
                   Search
                 </button>
               </div>
-              <div class="col">
+              <div className="col">
                 <div>
                   <button
                     type="button"
-                    class="btn btn-outline-warning"
+                    className="btn btn-outline-warning"
                     id="current-location-button"
                   >
                     Current
@@ -38,34 +38,34 @@ export default function Weathr() {
             </div>
           </form>
 
-          <div class="day">
-            <div class="row">
-              <div class="col-2">
+          <div className="day">
+            <div className="row">
+              <div className="col-2">
                 <img id="icon" src="" alt="Sun" />
               </div>
-              <div class="col-2">
+              <div className="col-2">
                 <div id="weekday">Friday</div>
                 <div id="currentdate">17.05.2023</div>
               </div>
-              <div class="col-4">
+              <div className="col-4">
                 <div id="currenttime">19:20</div>
                 <div id="description">Sunny</div>
               </div>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-4">
+          <div className="row">
+            <div className="col-4">
               <h1 id="city">Sydney</h1>
             </div>
-            <div class="col-3">
+            <div className="col-3">
               <h1>
                 <span id="temperature">20</span>
-                <span class="units">19°C </span>
+                <span className="units">°C </span>
               </h1>
             </div>
 
-            <div class="col-4">
+            <div className="col-4">
               <ul>
                 <li>
                   Humidity: <span id="humidity">80</span>%
@@ -77,7 +77,7 @@ export default function Weathr() {
             </div>
           </div>
 
-          <div class="weather-forecast" id="forecast"></div>
+          <div className="weather-forecast" id="forecast"></div>
         </div>
       </div>
     </div>
