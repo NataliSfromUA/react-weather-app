@@ -15,12 +15,12 @@ export default function Weathr() {
                   className="form-control"
                   placeholder="Choose your city"
                   aria-label="Choose your city"
-                  autofocus="on"
+                  autoFocus="on"
                   id="searchcity"
                 />
               </div>
               <div className="col">
-                <button type="submit" className="btn btn-warning">
+                <button type="submit" className="btn btn-warning w-100">
                   Search
                 </button>
               </div>
@@ -28,7 +28,7 @@ export default function Weathr() {
                 <div>
                   <button
                     type="button"
-                    className="btn btn-outline-warning"
+                    className="btn btn-outline-warning w-100"
                     id="current-location-button"
                   >
                     Current
@@ -41,7 +41,7 @@ export default function Weathr() {
           <div className="day">
             <div className="row">
               <div className="col-2">
-                <img id="icon" src="" alt="Sun" />
+                <img id="icon" src="./sunny.png" alt="Sun" />
               </div>
               <div className="col-2">
                 <div id="weekday">Friday</div>
@@ -76,8 +76,6 @@ export default function Weathr() {
               </ul>
             </div>
           </div>
-
-          <div className="weather-forecast" id="forecast"></div>
         </div>
       </div>
     </div>

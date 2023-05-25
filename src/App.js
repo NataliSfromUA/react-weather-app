@@ -7,7 +7,7 @@ export default function App() {
     <div className="App">
       <div className="container">
         <Weather />
-        <footer>
+        <footer className="footer">
           This project was coded by
           <a
             href="https://app.netlify.com/sites/fabulous-marzipan-645376/overview"
