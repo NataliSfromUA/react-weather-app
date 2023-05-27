@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./weather.css";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
+import FormattedDate from "./FormattedDate";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -17,7 +18,7 @@ export default function Weather(props) {
       city: response.data.name,
       description: response.data.weather[0].description,
       iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
-      data: "",
+      date: new Date(response.data.dt * 1000),
     });
   }
 
@@ -66,12 +67,11 @@ export default function Weather(props) {
                     alt={weatherData.description}
                   />
                 </div>
-                <div className="col-2">
-                  <div id="weekday">Friday</div>
-                  <div id="currentdate">{weatherData.date}</div>
-                </div>
+
                 <div className="col-4">
-                  <div id="currenttime">19:20</div>
+                  <div id="currentdate">
+                    <FormattedDate date={weatherData.date} />
+                  </div>
                   <div id="description">{weatherData.description}</div>
                 </div>
               </div>
