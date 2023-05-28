@@ -16,6 +16,8 @@
 }
 .units {
   position: relative;
+  font-size: 18px;
+  margin-left: 5px;
 }
 
 #description:first-letter {
