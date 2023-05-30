@@ -18,6 +18,7 @@
   position: relative;
   font-size: 18px;
   margin-left: 5px;
+  margin-top: 0px;
 }
 
 #description:first-letter {
